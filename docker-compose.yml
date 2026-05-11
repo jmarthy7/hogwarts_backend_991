@@ -1,0 +1,11 @@
+services:
+app:
+# Asegúrate de que esta sea la imagen de tu repo: hogwarts_backend_
+991
+image: ghcr.io/profies/aaee_mapamundi_sb:latest
+container_name: aaee_hogwarst_app_jmb
+restart: always
+ports:
+- "8080:8080" # El puerto que usa tu API
+env_file:
+- .env
