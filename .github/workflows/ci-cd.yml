@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '23' # Java 21 es LTS y más estable para CI que la 23
+          java-version: '21' # Java 21 es LTS y más estable para CI que la 23
 
       - name: Construir proyecto con Maven
         run: mvn clean package -DskipTests
