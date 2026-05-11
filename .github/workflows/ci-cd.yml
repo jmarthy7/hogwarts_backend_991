@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          java-version: '21' # Cambiado a 21 (LTS) o la que soporte tu proyecto, 23 es muy reciente
+          java-version: '23' # Cambiado a 21 (LTS) o la que soporte tu proyecto, 23 es muy reciente
 
       - name: Construir proyecto con Maven
         run: mvn clean package
