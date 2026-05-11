@@ -47,4 +47,4 @@ jobs:
       - name: Build and Push Docker image
         run: |
           docker build -t ghcr.io/${{ env.REPO_LOWER }}:latest .
-          docker push ghcr.io/${{ env.REPO_LOWER }}:latests
+          docker push ghcr.io/${{ env.REPO_LOWER }}:latest
